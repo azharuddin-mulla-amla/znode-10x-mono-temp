@@ -15,10 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@znode/agents": ["packages/agents/src/index.ts"],
+      "@znode/agents/server": ["packages/agents/src/server.ts"],
       "@znode/base-components": ["packages/base-components/src/index.ts"],
       "@znode/base-components/server": [
         "packages/base-components/src/server.ts"
       ],
+      "@znode/clients": ["packages/clients/src/index.ts"],
+      "@znode/clients/server": ["packages/clients/src/server.ts"],
       "@znode/data-providers": ["packages/data-providers/src/index.ts"],
       "@znode/data-providers/server": ["packages/data-providers/src/server.ts"],
       "@znode/page-builder": ["packages/page-builder/src/index.ts"],

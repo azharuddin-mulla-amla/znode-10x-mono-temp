@@ -1,12 +1,20 @@
 import { getTranslations } from "next-intl/server";
+import { getSliderData } from "@znode/agents/server"
 
 export default async function Index() {
   const t = await getTranslations("HomePage");
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.tailwind file.
-   */
+
+  //this is for testing purpose
+  const sliderData = await getSliderData({
+    localeId:"1",
+    publishCatalogId: "5",
+    widgetKey:"555",
+    widgetCode:"BannerSlider",
+    typeOfMapping:"PortalMapping",
+    cMSMappingId: "7",
+    portalId:"7",
+  });
+
   return (
     <div>
       <div className="wrapper">
