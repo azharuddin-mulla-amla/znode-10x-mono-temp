@@ -1,4 +1,7 @@
-export default function Index() {
+import { getTranslations } from "next-intl/server";
+
+export default async function Index() {
+  const t = await getTranslations("HomePage");
   /*
    * Replace the elements below with your own.
    *
@@ -10,8 +13,8 @@ export default function Index() {
         <div className="container">
           <div id="welcome">
             <h1>
-              <span> Hello there, </span>
-              Welcome webstore 👋
+              <span>   {t('title')} </span>
+              {t('welcome')} 👋
             </h1>
           </div>
 
