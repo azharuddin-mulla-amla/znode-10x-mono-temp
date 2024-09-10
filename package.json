@@ -5,13 +5,14 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@measured/puck": "0.16.0-canary.1beaf6b",
+    "cloudinary": "^2.4.0",
     "next": "14.2.3",
+    "next-auth": "^4.24.7",
     "next-intl": "^3.19.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "tslib": "^2.3.0",
-    "@measured/puck": "0.16.0-canary.1beaf6b",
-    "cloudinary": "^2.4.0"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@nx/eslint": "19.7.0",
