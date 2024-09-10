@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@znode/base-components": ["packages/base-components/src/index.ts"],
+      "@znode/base-components/server": [
+        "packages/base-components/src/server.ts"
+      ],
+      "@znode/page-builder": ["packages/page-builder/src/index.ts"],
+      "@znode/page-builder/server": ["packages/page-builder/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
