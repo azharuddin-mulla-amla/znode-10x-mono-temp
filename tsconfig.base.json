@@ -22,6 +22,9 @@
       "@znode/data-providers": ["packages/data-providers/src/index.ts"],
       "@znode/data-providers/server": ["packages/data-providers/src/server.ts"],
       "@znode/page-builder": ["packages/page-builder/src/index.ts"],
+      "@znode/page-builder/types": [
+        "packages/page-builder/src/types/exports/exports.types.ts"
+      ],
       "@znode/page-builder/server": ["packages/page-builder/src/server.ts"]
     }
   },
